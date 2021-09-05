@@ -91,9 +91,10 @@ main {
   color: #FFF;
   font-size: 102px;
 
+  
   text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
   text-align: center;
-  text-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 .weather-box .weather{

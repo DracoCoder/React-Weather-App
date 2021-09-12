@@ -42,7 +42,7 @@ function App() {
         : 'app'}>
       <main>
         <div className="search-box" >
-          < FaSearchLocation className="search-icon" size={35} />
+          < FaSearchLocation className="search-icon" size={14} />
           <input
             type="text"
             className="search-bar"

@@ -34,14 +34,14 @@ main {
   padding-left: 0px;
 
   display:flex;
-  flex-direction: row;
+  flex-direction: row-;
   justify-content: center;
   align-items: center;
 }
 
 .search-box .search-bar {
   display: block;
-  width: 100%;
+  width: 80%;
   padding: 15px;
 
   appearance: none;
@@ -49,8 +49,8 @@ main {
   border: none;
   outline: none;
 
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 16px 16px 16px 16px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 25px 25px 25px 25px;
   margin-left: 0px;
 
   box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
@@ -62,8 +62,29 @@ main {
 }
 
 .search-icon{
-  padding-right: 5px;
+  padding: 7px;
+
+  width: 10%;
+  height: 1%;
+  margin: 0 0 75px;
+  
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 25px 25px 0px 25px;
+
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+
+  color: #313131;
+
+  transition: 0.4s ease;
 }
+
+
 
 .location-box .location{
   color: #fff;

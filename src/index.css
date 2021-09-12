@@ -27,9 +27,16 @@ main {
   padding: 25px;
 }
 
+
 .search-box {
   width: 100%;
   margin: 0 0 75px;
+  padding-left: 0px;
+
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .search-box .search-bar {
@@ -44,7 +51,7 @@ main {
 
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 16px 16px 16px 16px;
-  /* margin-top: -25px; */
+  margin-left: 0px;
 
   box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
 
@@ -54,8 +61,8 @@ main {
   transition: 0.4s ease;
 }
 
-.search-box .search-bar {
-  background-color: rgba(255, 255, 255, 0.5);
+.search-icon{
+  padding-right: 5px;
 }
 
 .location-box .location{

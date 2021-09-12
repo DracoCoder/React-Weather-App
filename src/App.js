@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FaSearchLocation } from 'react-icons/fa';
+
 const api = {
   key: "686b26bd01aaf6d6beeda3a45a4ec1eb",
   base: "https://api.openweathermap.org/data/2.5/"
@@ -13,7 +15,6 @@ function App() {
       fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
         .then(res => res.json())
         .then(result => {
-          setQuery('');
           setWeather(result);
           console.log(result);
         }
@@ -40,7 +41,8 @@ function App() {
           : 'app')
         : 'app'}>
       <main>
-        <div className="search-box">
+        <div className="search-box" >
+          < FaSearchLocation className="search-icon" size={35} />
           <input
             type="text"
             className="search-bar"

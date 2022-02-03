@@ -14,6 +14,7 @@ body {
   background-image: url('./assets/cold-bg.jpg');
   background-size: cover;
   background-position: bottom;
+  background-repeat: no-repeat;
   transition: 0.4 ease;
 }
 
@@ -39,6 +40,10 @@ main {
   align-items: center;
 }
 
+.search-bar{
+  text-transform: capitalize;
+}
+
 .search-box .search-bar {
   display: block;
   width: 80%;
@@ -57,29 +62,6 @@ main {
 
   color: #313131;
   font-size: 20px;
-
-  transition: 0.4s ease;
-}
-
-.search-icon{
-  padding: 7px;
-
-  width: 10%;
-  height: 1%;
-  margin: 0 0 75px;
-  
-
-  appearance: none;
-  background: none;
-  border: none;
-  outline: none;
-
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 25px 25px 0px 25px;
-
-  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
-
-  color: #313131;
 
   transition: 0.4s ease;
 }

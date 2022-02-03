@@ -16,7 +16,7 @@ body {
   background-size: 420px;
   background-position: center;
   background-repeat: no-repeat;
-  transition: 0.4 ease;
+  transition: 1s ease;
 }
 
 .app.warm {

@@ -11,14 +11,17 @@ body {
 }
 
 .app {
+  background-color: black;
   background-image: url('./assets/cold-bg.jpg');
-  background-size: cover;
-  background-position: bottom;
+  background-size: 420px;
+  background-position:center;
+  background-repeat: no-repeat;
   transition: 0.4 ease;
 }
 
 .app.warm {
   background-image: url('./assets/warm-bg.jpg');
+  background-repeat: no-repeat;
 }
 
 main {
@@ -43,6 +46,7 @@ main {
   display: block;
   width: 80%;
   padding: 15px;
+  max-width: 320px;
 
   appearance: none;
   background: none;
@@ -60,31 +64,6 @@ main {
 
   transition: 0.4s ease;
 }
-
-.search-icon{
-  padding: 7px;
-
-  width: 10%;
-  height: 1%;
-  margin: 0 0 75px;
-  
-
-  appearance: none;
-  background: none;
-  border: none;
-  outline: none;
-
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 25px 25px 0px 25px;
-
-  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
-
-  color: #313131;
-
-  transition: 0.4s ease;
-}
-
-
 
 .location-box .location{
   color: #fff;
@@ -117,7 +96,7 @@ main {
   padding: 15px 25px;
 
   color: #FFF;
-  font-size: 102px;
+  font-size: 90px;
 
   
   text-shadow: 3px 6px rgba(50, 50, 70, 0.5);

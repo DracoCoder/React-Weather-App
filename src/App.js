@@ -22,7 +22,9 @@ function App() {
 
   const getWeatherIcon = (iconParameter) => {
     const icon = `https://openweathermap.org/img/wn/${iconParameter}@2x.png`
-    return <img src={icon} alt="" />
+    return <img src={icon} alt={iconParameter} />
+    // const icon = `assets/weather/${iconParameter}.svg`
+    // return <img src={icon} alt={iconParameter} />
   }
 
   const dateBuilder = (d) => {
@@ -64,6 +66,8 @@ function App() {
                 <div className="temp">{Math.round(weather.main.temp)}°C</div>
                 <div className="weather">{weather.weather[0].main}</div>
                 <div className="weathericon">
+
+                  {/* {getWeatherIcon(weather.weather[0].main)} */}
                   {getWeatherIcon(weather.weather[0].icon)}
                 </div>
               </div>

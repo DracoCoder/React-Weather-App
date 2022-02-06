@@ -20,6 +20,11 @@ function App() {
         )
   }
 
+  const getWeatherIcon = (iconParameter) => {
+    const icon = `https://openweathermap.org/img/wn/${iconParameter}@2x.png`
+    return <img src={icon} alt="" />
+  }
+
   const dateBuilder = (d) => {
     let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -59,7 +64,7 @@ function App() {
                 <div className="temp">{Math.round(weather.main.temp)}°C</div>
                 <div className="weather">{weather.weather[0].main}</div>
                 <div className="weathericon">
-                  <img src="https://www.svgrepo.com/show/57154/fog.svg" alt="fog" height="90px" width="120px"></img>
+                  {getWeatherIcon(weather.weather[0].icon)}
                 </div>
               </div>
             </div>

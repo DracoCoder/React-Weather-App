@@ -12,7 +12,7 @@ body {
 
 .app {
   background-color: black;
-  background-image: url('./assets/cold-bg.jpg');
+  background-image: url('./assets/bg/cold-bg.jpg');
   background-size: 420px;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,7 +20,7 @@ body {
 }
 
 .app.warm {
-  background-image: url('./assets/warm-bg.jpg');
+  background-image: url('./assets/bg/warm-bg.jpg');
 }
 
 main {
@@ -43,6 +43,7 @@ main {
 
 .search-bar{
   text-transform: capitalize;
+  text-align: center;
 }
 
 .search-box .search-bar {
@@ -131,10 +132,10 @@ main {
   display: inline-block;
   margin: 20px auto;
 
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 16px;
 
-  padding: 10px 15px;
+  padding: 8px 12px;
 
   text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
   text-align: center;

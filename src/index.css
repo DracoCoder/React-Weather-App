@@ -12,7 +12,7 @@ body {
 
 .app {
   background-color: black;
-  background-image: url('./assets/bg/cold-bg.jpg');
+  background-image: url('./assets/cold-bg.jpg');
   background-size: 420px;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,7 +20,7 @@ body {
 }
 
 .app.warm {
-  background-image: url('./assets/bg/warm-bg.jpg');
+  background-image: url('./assets/warm-bg.jpg');
 }
 
 main {

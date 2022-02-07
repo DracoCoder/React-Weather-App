@@ -94,7 +94,7 @@ main {
 }
 
 .weather-box{
-  padding-top: 7vh;
+  padding-top: 5vh;
   text-align: center;
 }
 
@@ -105,10 +105,11 @@ main {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
 
-  padding: 15px 25px;
+  padding: 10px 20px; 
+  /*Top and bottom padding is 10px and Left Right padding is 20px */
 
   color: #FFFF;
-  font-size: 90px;
+  font-size: 80px;
 
   
   text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
@@ -132,7 +133,7 @@ main {
   display: inline-block;
   margin: 20px auto;
 
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.4);
   border-radius: 16px;
 
   padding: 8px 12px;

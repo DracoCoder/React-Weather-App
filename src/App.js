@@ -23,7 +23,7 @@ function App() {
 
   const getWeatherIcon = (iconParameter) => {
     const icon = `${iconParameter}.svg`
-    return < img src={icon} alt={iconParameter} width='90px' />
+    return < img src={icon} alt={iconParameter} width='100px' />
   }
 
   const dateBuilder = (d) => {

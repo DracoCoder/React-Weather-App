@@ -12,7 +12,7 @@ body {
 
 .app {
   background-color: black;
-  background-image: url('./assets/cold-bg.jpg');
+  background-image: url('./assets/bg/cold-bg.jpg');
   background-size: 420px;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,7 +20,7 @@ body {
 }
 
 .app.warm {
-  background-image: url('./assets/warm-bg.jpg');
+  background-image: url('./assets/bg/warm-bg.jpg');
 }
 
 main {
@@ -43,6 +43,7 @@ main {
 
 .search-bar{
   text-transform: capitalize;
+  text-align: center;
 }
 
 .search-box .search-bar {
@@ -71,12 +72,16 @@ main {
 
 
 .location-box .location{
-  color: #fff;
-  font-size: 48px;
+  color: #ffff;
+  font-size: 45px;
   font-weight: 700;
+
   padding: 5px;
+
   text-align: center;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 .location-box .date{
@@ -89,7 +94,7 @@ main {
 }
 
 .weather-box{
-  padding-top: 7vh;
+  padding-top: 5vh;
   text-align: center;
 }
 
@@ -100,20 +105,42 @@ main {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
 
-  padding: 15px 25px;
+  padding: 10px 20px; 
+  /*Top and bottom padding is 10px and Left Right padding is 20px */
 
-  color: #FFF;
-  font-size: 90px;
+  color: #FFFF;
+  font-size: 80px;
 
   
   text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
   text-align: center;
+
   box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 .weather-box .weather{
   color: #FFF;
+  
   font-size: 48px;
   font-weight: 700;
-  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
 }
+
+.weathericon{
+  position: relative;
+  display: inline-block;
+  margin: 20px auto;
+
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+
+  padding: 8px 12px;
+
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+

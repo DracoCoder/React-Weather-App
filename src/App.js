@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 const api = {
   key: "686b26bd01aaf6d6beeda3a45a4ec1eb",
   base: "https://api.openweathermap.org/data/2.5/"
@@ -18,6 +19,11 @@ function App() {
           console.log(result);
         }
         )
+  }
+
+  const getWeatherIcon = (iconParameter) => {
+    const icon = `${iconParameter}.svg`
+    return < img src={icon} alt={iconParameter} width='100px' />
   }
 
   const dateBuilder = (d) => {
@@ -58,6 +64,9 @@ function App() {
               <div className="weather-box">
                 <div className="temp">{Math.round(weather.main.temp)}°C</div>
                 <div className="weather">{weather.weather[0].main}</div>
+                <div className="weathericon">
+                  {getWeatherIcon(weather.weather[0].main)}
+                </div>
               </div>
             </div>
           </div>

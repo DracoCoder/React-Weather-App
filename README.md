@@ -1,6 +1,6 @@
 # <img src="public/favicon.ico"/> Dynamic Weather App 
-###  Using <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" width="24px"/>React.js and <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" width="24px"/>Node.js
-### Hosted On Vercel
+###  Developed using <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" width="36px" alt="React.js"/>  &  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" width="36px" alt="Node.js"/>
+### Hosted On Vercel!
 ### <a href="https://dynamic-weather.vercel.app"> Try Now!! </a>
 <br/>
 <p align="center">

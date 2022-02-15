@@ -7,8 +7,8 @@ const api = {
 }
 
 function App() {
-  const [query, setQuery] = useState('Nagpur');
-  const [weather, setWeather] = useState();
+  const [query, setQuery] = useState('');
+  const [weather, setWeather] = useState({});
 
   const search = evt => {
     if (evt.key === "Enter")

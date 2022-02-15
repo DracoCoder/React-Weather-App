@@ -8,14 +8,7 @@ const api = {
 
 function App() {
   const [query, setQuery] = useState('Nagpur');
-  const [weather, setWeather] = useState(
-    fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
-      .then(res => res.json())
-      .then(result => {
-        setWeather(result);
-        console.log(result);
-      })
-  );
+  const [weather, setWeather] = useState();
 
   const search = evt => {
     if (evt.key === "Enter")

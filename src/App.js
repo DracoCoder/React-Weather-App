@@ -16,11 +16,12 @@ function App() {
         .then(res => res.json())
         .then(result => {
           setWeather(result);
-          console.log(result);
+          console.log(result); //Debug
         }
         )
   }
 
+  // Get Weather icon from local storage
   const getWeatherIcon = (iconParameter) => {
     const icon = `${iconParameter}.svg`
     return < img src={icon} alt={iconParameter} width='100px' />
@@ -31,20 +32,25 @@ function App() {
     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
     let day = days[d.getDay()];
+    {/* console.log(d.getDay);
+  console.log(day); */}
     let date = d.getDate();
     let month = months[d.getMonth()];
     let year = d.getFullYear();
 
     return `${day} ${date} ${month} ${year}`
+    //Wednesday 1 August 2001
   }
 
   return (
     <div className={
       (typeof weather.main != "undefined")
-        ? ((weather.main.temp >= 30)
+        ? ((weather.main.temp >= 24)
           ? 'app warm'
           : 'app')
         : 'app'}>
+      {/* classname is variable for themeing purposes
+        24 is threshold for cold and hot background */}
       <main>
         <div className="search-box" >
           <input
@@ -77,3 +83,7 @@ function App() {
 }
 
 export default App;
+
+
+//To Do Add Intro Screen (Text)
+//Add Neutral Background

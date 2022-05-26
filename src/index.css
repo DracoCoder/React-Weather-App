@@ -12,20 +12,27 @@ body {
 
 .app {
   background-color: black;
-  background-image: url('./assets/cold-bg.jpg');
+  background-image: url('./assets/normal-bg.jpg');
   background-size: 420px;
   background-position: center;
   background-repeat: no-repeat;
   transition: 1s ease;
+  text-align: center;
 }
 
 .app.warm {
   background-image: url('./assets/warm-bg.jpg');
+  text-align: center;
+}
+
+.app.cold {
+  background-image: url('./assets/cold-bg.jpg');
+  text-align: center;
 }
 
 main {
   min-height: 100vh;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0, 2, 2, 0.75));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(2, 2, 2, 0.9));
   padding: 25px;
 }
 
@@ -35,13 +42,13 @@ main {
   margin: 0 0 75px;
   padding-left: 0px;
 
-  display:flex;
+  display: flex;
   flex-direction: row-;
   justify-content: center;
   align-items: center;
 }
 
-.search-bar{
+.search-bar {
   text-transform: capitalize;
   text-align: center;
 }
@@ -69,21 +76,42 @@ main {
   transition: 0.4s ease;
 }
 
+.startscreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: right;
 
 
-.location-box .location{
+  color: #FFFF;
+  font-size: 45px;
+  font-weight: 700;
+  width: 350px;
+  margin: auto;
+
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.welcometext {
+  padding-top: 25%;
+}
+
+
+.location-box .location {
   color: #fff;
   font-size: 45px;
   font-weight: 700;
 
   padding: 5px;
 
-  text-align: center;
+
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
 
 }
 
-.location-box .date{
+.location-box .date {
   color: #FFF;
 
   font-size: 20px;
@@ -95,42 +123,42 @@ main {
 
 }
 
-.weather-box{
+.weather-box {
   padding-top: 5vh;
   text-align: center;
 }
 
-.weather-box .temp{
+.weather-box .temp {
   position: relative;
   display: inline-block;
   margin: 30px auto;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
 
-  padding: 10px 20px; 
+  padding: 10px 20px;
   /*Top and bottom padding is 10px and Left Right padding is 20px */
 
   color: #FFFF;
   font-size: 80px;
 
-  
+
   text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
   text-align: center;
 
   box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
 }
 
-.weather-box .weather{
+.weather-box .weather {
   color: #FFF;
-  
+
   font-size: 48px;
   font-weight: 700;
-  
+
   text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
   text-align: center;
 }
 
-.weathericon{
+.weathericon {
   position: relative;
   display: inline-block;
   margin: 20px auto;
@@ -145,4 +173,3 @@ main {
 
   box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
 }
-

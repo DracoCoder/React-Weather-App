@@ -47,10 +47,8 @@ function App() {
       (typeof weather.main != "undefined")
         ? ((weather.main.temp >= 24)
           ? 'app warm'
-          : 'app')
+          : 'app cold')
         : 'app'}>
-      {/* classname is variable for themeing purposes
-        24 is threshold for cold and hot background */}
       <main>
         <div className="search-box" >
           <input
@@ -76,8 +74,16 @@ function App() {
               </div>
             </div>
           </div>
-        ) : ('')}
-      </main>
+        ) : (
+          <div className="startscreen">
+
+            <div className="welcometext">
+              <div><h1>Hello!</h1> <h6>Please Enter a Location.</h6> </div>
+            </div>
+          </div>
+        )
+        }
+      </main >
     </div >
   );
 }

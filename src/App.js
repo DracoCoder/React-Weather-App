@@ -16,11 +16,12 @@ function App() {
         .then(res => res.json())
         .then(result => {
           setWeather(result);
-          console.log(result);
+          console.log(result); //Debug
         }
         )
   }
 
+  // Get Weather icon from local storage
   const getWeatherIcon = (iconParameter) => {
     const icon = `${iconParameter}.svg`
     return < img src={icon} alt={iconParameter} width='100px' />
@@ -31,11 +32,14 @@ function App() {
     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
     let day = days[d.getDay()];
+    {/* console.log(d.getDay);
+  console.log(day); */}
     let date = d.getDate();
     let month = months[d.getMonth()];
     let year = d.getFullYear();
 
     return `${day} ${date} ${month} ${year}`
+    //Wednesday 1 August 2001
   }
 
   return (
@@ -43,7 +47,7 @@ function App() {
       (typeof weather.main != "undefined")
         ? ((weather.main.temp > 27)
           ? 'app warm'
-          : 'app')
+          : 'app cold')
         : 'app'}>
       <main>
         <div className="search-box" >
@@ -70,10 +74,22 @@ function App() {
               </div>
             </div>
           </div>
-        ) : ('')}
-      </main>
+        ) : (
+          <div className="startscreen">
+
+            <div className="welcometext">
+              <div><h1>Hello!</h1> <h6>Please Enter a Location.</h6> </div>
+            </div>
+          </div>
+        )
+        }
+      </main >
     </div >
   );
 }
 
 export default App;
+
+
+//To Do Add Intro Screen (Text)
+//Add Neutral Background
